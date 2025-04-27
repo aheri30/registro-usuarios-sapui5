@@ -1,0 +1,66 @@
+{
+    "nationalityText": "",
+    "nationalityKey": "",
+    "NationalitySet": [
+      {
+        "key": "VE",
+        "text": "Venezolano/a"
+      },
+      {
+        "key": "BR",
+        "text": "Brasileño/a"
+      },
+      {
+        "key": "MX",
+        "text": "Mexicano/a"
+      },
+      {
+        "key": "SE",
+        "text": "Sueco/a"
+      },
+      {
+        "key": "UK",
+        "text": "Británico/a"
+      },
+      {
+        "key": "US",
+        "text": "Estadounidense"
+      },
+      {
+        "key": "FR",
+        "text": "Francés/Francesa"
+      },
+      {
+        "key": "DE",
+        "text": "Alemán/Alemana"
+      },
+      {
+        "key": "IT",
+        "text": "Italiano/a"
+      },
+      {
+        "key": "JP",
+        "text": "Japonés/Japonesa"
+      },
+      {
+        "key": "CN",
+        "text": "Chino/a"
+      },
+      {
+        "key": "IN",
+        "text": "Indio/a"
+      },
+      {
+        "key": "ZA",
+        "text": "Sudafricano/a"
+      },
+      {
+        "key": "AR",
+        "text": "Argentino/a"
+      },
+      {
+        "key": "CA",
+        "text": "Canadiense"
+      }
+    ]
+  }

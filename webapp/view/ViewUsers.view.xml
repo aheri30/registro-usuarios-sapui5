@@ -1,0 +1,213 @@
+<mvc:View controllerName="com.eliannis.user.users.controller.ViewUsers"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+
+    <Page id="page" showHeader="true">
+        <headerContent>
+            <Button id="btnBack" icon="sap-icon://nav-back" press="onNavBack" />
+        </headerContent>
+         
+
+        <VBox id="box" class="sapUiSmallMargin">
+            <!-- Formulario de Dirección -->
+            		<f:SimpleForm id="SimpleFormDisplay480_12120"
+			editable="false"
+			layout="ResponsiveGridLayout"
+	
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<core:Title id="titlePersonal" text="{i18n>personalInformation}" />
+			     <Label id ="lbId"  labelFor="idId" text="{i18n>name}" class="sapUiTinyMarginTop" />
+				<Input id="idId" value="{name}" required="true"/>
+				<Label id="lbTypeD" labelFor="slDocument" text="{i18n>typeD}" class="sapUiTinyMarginTop" />
+		 <Select id="slDocument" selectedKey="{typeDocument>/documentKey}"
+                                forceSelection="false"
+                                required="true"
+                                items="{typeDocument>/TypeDocumentSet}">
+                                
+                                <items>
+                                    <core:Item id="selectItem" key="{typeDocument>key}" text="{typeDocument>text}"/>
+                                </items>
+                            </Select>
+                <Label id="lbNumberD" labelFor="iNumberD" text="{i18n>numberD}" class="sapUiTinyMarginTop" />
+				<Input id="iNumberD" value="{user>/personalInformation/numberDocument}" required="true" />
+                <Label id="lbFirstN" labelFor="iFirstN" text="{i18n>firstName}" class="sapUiTinyMarginTop" />
+				<Input id="iFirstN" value="{firstName}" required="true"/>
+                <Label id="lbLastN" labelFor="iLastn" text="{i18n>lastName}" class="sapUiTinyMarginTop" />
+				<Input id="iLastN" value="{lastName}"  required="true"/>
+               <Label id="lbBirthDate" labelFor="dBirthDate" text="{i18n>birthDate}" class="sapUiTinyMarginTop" />
+                <DatePicker id="dBirthDate" value="{SupplierName}" required="true" />
+				<core:Title id="titleOther" text="{i18n>otherinfo}" />
+			 <Label id ="lbPlaceB"  labelFor="slPlaceB" text="{i18n>placeB}" class="sapUiTinyMarginTop" />
+				<Select id="slPlaceB" selectedKey="{placeOfBirth>/placeKey}"
+                                forceSelection="false"
+                                required="true"
+                                items="{placeOfBirth>/CountriesSet}">        
+                                <items>
+                                    <core:Item id="selectItemPaceB" key="{placeOfBirth>key}" text="{placeOfBirth>text}"/>
+                                </items>
+                            </Select>
+				<Label id="lbNatio" labelFor="slNatio" text="{i18n>natio}" class="sapUiTinyMarginTop" />
+				<Select id="slNatio" selectedKey="{nationality>/nationalityKey}"
+                                forceSelection="false"
+                                required="true"
+                                items="{nationality>/NationalitySet}">        
+                                <items>
+                                    <core:Item id="selectItemNatio" key="{nationality>key}" text="{nationality>text}"/>
+                                </items>
+                            </Select>
+                <Label id="lbGenre" labelFor="slGenre" text="{i18n>gender}" class="sapUiTinyMarginTop" />
+                <Select id="slGenre" selectedKey="{gender>/genderText}"
+                                forceSelection="false"
+                                required="true"
+                                items="{gender>/GenderSet}">        
+                                <items>
+                                    <core:Item id="selectItemGenre" key="{gender>key}" text="{gender>text}"/>
+                                </items>
+                            </Select>
+                <Label id="lbCivil" labelFor="slCivilS" text="{i18n>civilStatus}" class="sapUiTinyMarginTop" />
+					<Select id="slCivilS" selectedKey="{civilStatus>/civilStatusKey}"
+                                forceSelection="false"
+                                required="true"
+                                items="{civilStatus>/CivilStatusSet}">        
+                                <items>
+                                    <core:Item id="selectItemCivilS" key="{civilStatus>key}" text="{civilStatus>text}"/>
+                                </items>
+                            </Select>
+			</f:content>
+		</f:SimpleForm>
+		<f:SimpleForm id="SimpleFormDisplay480_12120-2"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<core:Title id="titleAdressInfo" text="{i18n>adressInfo}" />
+                <Label id ="lbCountry"  labelFor="iCountry" text="{i18n>country}" class="sapUiTinyMarginTop" />
+	<Select id="slCountry" selectedKey="{country>/countryKey}" change="onCountryChange"
+        forceSelection="false" required="true"
+        items="{country>/CountriesSet}">
+    <items>
+        <core:Item id="selectItemCountry" key="{country>key}" text="{country>text}"/>
+    </items>
+    </Select>
+
+    <Label id ="lbProvince"  labelFor="slProvince" text="{i18n>province}" class="sapUiTinyMarginTop" />
+		<Select id="slProvince" selectedKey="{province>/provinceKey} " change="onProvinceChange"
+        forceSelection="false"
+        required="true"
+        items="{province>/filteredProvinces}">
+    <items>
+        <core:Item id="selectItemProvince" key="{province>key}" text="{province>text}"/>
+    </items>
+</Select>
+ <Label id ="lbRegion"  labelFor="slRegion" text="{i18n>region}" class="sapUiTinyMarginTop" />
+  <Select id="slRegion" selectedKey="{region>/regionKey}"
+        forceSelection="false"
+        required="true"
+        items="{region>/filteredRegions}">
+    <items>
+        <core:Item id="selectItemRegion" key="{region>key}" text="{region>text}"/>
+    </items>
+</Select>
+                <Label id ="lbAdress"  labelFor="iAdress" text="{i18n>adress}" class="sapUiTinyMarginTop" />
+				<Input id="iAdress" value="{name}" required="true"/>
+                <Label id ="lbPostalCode"  labelFor="iPostalCode" text="{i18n>postalCode}" class="sapUiTinyMarginTop" />
+				<Input id="iPostalCode" value="{name}" required="true"/>
+                <core:Title id="titleOther2" text="{i18n>contactInfo}" />
+			 <Label id ="lbPhone"  labelFor="iPhone" text="{i18n>phone}" class="sapUiTinyMarginTop" />
+				<Input id="iPhone" value="{name}" required="true"/>
+			 <Label id ="lbEmail"  labelFor="iEmail" text="{i18n>email}" class="sapUiTinyMarginTop" />
+				<Input id="iEmail" value="{name}" required="true"/>
+
+			
+			</f:content>
+		</f:SimpleForm>
+        </VBox>
+<HBox id="boxButtons" justifyContent="End">
+    <Button id="btnAcept" type="Accept"
+            class="sapUiTinyMarginRight"
+            text="Save"
+            press="onSave"
+            ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+    </Button>
+    <Button id="btnRejec" type="Reject"
+            class="sapUiSmallMarginBegin"
+            text="Clear"
+            press="onClear"
+            ariaDescribedBy="rejectButtonDescription genericButtonDescription">
+    </Button>
+</HBox>
+
+    <VBox id="tableContainer" class="sapUiSmallMargin">
+        <Table id="userTable" items="{user>/dataList}" width="100%">
+            <columns>
+                <Column id="_IDGenColumn">
+                    <Text id="_IDGenText" text="{i18n>numberD}" />
+                </Column>
+                <Column id="_IDGenColumn1">
+                    <Text id="_IDGenText1" text="{i18n>fullName}" />
+                </Column>
+                <Column id="_IDGenColumn2">
+                     <Text id="_IDGenText2" text="{i18n>birthDate}" />
+                </Column>
+                <Column id="_IDGenColumn3">
+                    <Text id="_IDGenText3" text="{i18n>placeB}" />
+                </Column>
+                <Column id="_IDGenColumn4">
+                    <Text id="_IDGenText4" text="{i18n>natio}" />
+                </Column>
+                <Column id="_IDGenColumn5">
+                    <Text id="_IDGenText5" text="{i18n>genre}" />
+                </Column>
+                <Column id="_IDGenColumn6">
+                    <Text id="_IDGenText6" text="{i18n>civilStatus}" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem id="_IDGenColumnListItem">
+                    <cells>
+                        <Text id="_IDGenText7" text="{user>personalInformation/numberDocument}" />
+                        <Text id="_IDGenText8" text="{= ${user>personalInformation/firstName} + ' ' + ${user>personalInformation/lastName} }" />
+                        <Text id="_IDGenText10" text="{user>personalInformation/birthDate}" />
+                        <Text id="_IDGenText11" text="{user>otherInformation/placeBirth}" />
+                        <Text id="_IDGenText12" text="{user>otherInformation/nationality}" />
+                        <Text id="_IDGenText13" text="{user>otherInformation/genre}" />
+                        <Text id="_IDGenText14" text="{user>otherInformation/civilStatus}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </VBox>
+
+
+    </Page>
+ 
+
+</mvc:View>

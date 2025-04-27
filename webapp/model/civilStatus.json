@@ -1,0 +1,30 @@
+{
+    "civilStatusText": "",
+    "civilStatusKey": "",
+    "CivilStatusSet": [
+      {
+        "key": "S",
+        "text": "Soltero/a"
+      },
+      {
+        "key": "M",
+        "text": "Casado/a"
+      },
+      {
+        "key": "D",
+        "text": "Divorciado/a"
+      },
+      {
+        "key": "W",
+        "text": "Viudo/a"
+      },
+      {
+        "key": "P",
+        "text": "Pareja de Hecho"
+      },
+      {
+        "key": "O",
+        "text": "Otro"
+      }
+    ]
+  }

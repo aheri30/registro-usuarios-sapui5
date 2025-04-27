@@ -1,0 +1,38 @@
+{
+  "documentText": "",
+  "documentKey": "",
+  "TypeDocumentSet": [
+    {
+      "key": "DNI",
+      "text": "Documento Nacional de Identidad"
+    },
+    {
+      "key": "Passport",
+      "text": "Pasaporte"
+    },
+    {
+      "key": "DriverLicense",
+      "text": "Licencia de Conducir"
+    },
+    {
+      "key": "IDCard",
+      "text": "Tarjeta de Identificación"
+    },
+    {
+      "key": "SocialSecurity",
+      "text": "Número de Seguridad Social"
+    },
+    {
+      "key": "TaxID",
+      "text": "Número de Identificación Fiscal"
+    },
+    {
+      "key": "ResidencePermit",
+      "text": "Permiso de Residencia"
+    },
+    {
+      "key": "StudentID",
+      "text": "Carnet de Estudiante"
+    }
+  ]
+}

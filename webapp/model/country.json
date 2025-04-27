@@ -1,0 +1,66 @@
+{
+    "countryText": "",
+    "countryKey": "",
+    "CountriesSet": [
+      {
+        "key": "VE",
+        "text": "Venezuela"
+      },
+      {
+        "key": "BR",
+        "text": "Brazil"
+      },
+      {
+        "key": "MX",
+        "text": "Mexico"
+      },
+      {
+        "key": "SE",
+        "text": "Sweden"
+      },
+      {
+        "key": "UK",
+        "text": "United Kingdom"
+      },
+      {
+        "key": "US",
+        "text": "United States"
+      },
+      {
+        "key": "FR",
+        "text": "France"
+      },
+      {
+        "key": "DE",
+        "text": "Germany"
+      },
+      {
+        "key": "IT",
+        "text": "Italy"
+      },
+      {
+        "key": "JP",
+        "text": "Japan"
+      },
+      {
+        "key": "CN",
+        "text": "China"
+      },
+      {
+        "key": "IN",
+        "text": "India"
+      },
+      {
+        "key": "ZA",
+        "text": "South Africa"
+      },
+      {
+        "key": "AR",
+        "text": "Argentina"
+      },
+      {
+        "key": "CA",
+        "text": "Canada"
+      }
+    ]
+  }

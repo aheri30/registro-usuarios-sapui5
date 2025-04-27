@@ -1,0 +1,80 @@
+{
+    "regionText": "",
+    "regionKey": "",
+    "RegionSet": [
+      {
+        "countryKey": "VE",
+        "provinceKey": "ZUL",
+        "province": "Zulia",
+        "regions": [
+          { "key": "MCB", "text": "Maracaibo" },
+          { "key": "CAB", "text": "Cabimas" },
+          { "key": "COL", "text": "Ciudad Ojeda" },
+          { "key": "SAN", "text": "San Francisco" }
+        ]
+      },
+      {
+        "countryKey": "VE",
+        "provinceKey": "MER",
+        "province": "Mérida",
+        "regions": [
+          { "key": "MER", "text": "Mérida Capital" },
+          { "key": "EJ", "text": "Ejido" },
+          { "key": "TAB", "text": "Tabay" },
+          { "key": "ELV", "text": "El Vigía" }
+        ]
+      },
+      {
+        "countryKey": "BR",
+        "provinceKey": "SP",
+        "province": "São Paulo",
+        "regions": [
+          { "key": "SPC", "text": "São Paulo Capital" },
+          { "key": "CAMP", "text": "Campinas" },
+          { "key": "SORO", "text": "Sorocaba" },
+          { "key": "SANT", "text": "Santos" }
+        ]
+      },
+      {
+        "countryKey": "MX",
+        "provinceKey": "CDMX",
+        "province": "Ciudad de México",
+        "regions": [
+          { "key": "POL", "text": "Polanco" },
+          { "key": "COY", "text": "Coyoacán" },
+          { "key": "ROM", "text": "Roma" },
+          { "key": "CON", "text": "Condesa" }
+        ]
+      },
+      {
+        "countryKey": "MX",
+        "provinceKey": "JAL",
+        "province": "Jalisco",
+        "regions": [
+          { "key": "GDL", "text": "Guadalajara" },
+          { "key": "TON", "text": "Tonalá" },
+          { "key": "TLA", "text": "Tlaquepaque" },
+          { "key": "ZAP", "text": "Zapopan" }
+        ]
+      },
+      {
+        "countryKey": "US",
+        "provinceKey": "CA",
+        "province": "California",
+        "regions": [
+          { "key": "LA", "text": "Los Angeles" },
+          { "key": "SF", "text": "San Francisco" },
+          { "key": "SD", "text": "San Diego" },
+          { "key": "SJ", "text": "San Jose" }
+        ]
+      },
+      {
+        "countryKey": "DEFAULT",
+        "provinceKey": "DEFAULT",
+        "province": "Default Province",
+        "regions": [
+          { "key": "DEF", "text": "Default Region" }
+        ]
+      }
+    ]
+  }

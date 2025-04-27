@@ -1,0 +1,27 @@
+{
+    "personalInformation": {
+      "id": "",
+      "typeDocument": "",
+      "numberDocument": "",
+      "firstName": "",
+      "lastName": "",
+      "birthDate": ""
+    },
+    "otherInformation": {
+      "placeBirth": "",
+      "nationality": "",
+      "genre": "",
+      "civilStatus": ""
+    },
+    "addressInformation": {
+      "country": "",
+      "province": "",
+      "region": "",
+      "address": "",
+      "postalCode": ""
+    },
+    "contactInformation": {
+      "phoneNumber": "",
+      "email": ""
+    }
+  }

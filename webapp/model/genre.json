@@ -1,0 +1,26 @@
+{
+    "genderText": "",
+    "genderKey": "",
+    "GenderSet": [
+      {
+        "key": "M",
+        "text": "Masculino"
+      },
+      {
+        "key": "F",
+        "text": "Femenino"
+      },
+      {
+        "key": "NB",
+        "text": "No Binario"
+      },
+      {
+        "key": "O",
+        "text": "Otro"
+      },
+      {
+        "key": "ND",
+        "text": "Prefiero no decirlo"
+      }
+    ]
+  }
